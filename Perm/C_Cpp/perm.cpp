@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-void swap(int *a, int *b)
+void swap(char *a, char *b)
 {
     int t;
     t = *a;
@@ -9,7 +9,7 @@ void swap(int *a, int *b)
     *b = t;
 }
 
-void perm(int *list, int k, int m)
+void perm(char *list, int k, int m)
 {
     if (k == m) {
         for (int i = 0; i <= m; i++) {
@@ -27,9 +27,12 @@ void perm(int *list, int k, int m)
 
 int main()
 {
-    int list[] = {1, 2, 3};
+    char list_a[] = {4};
+    char list_b[] = {'a', 'b', 'c', 'd'};
 
-    perm(list, 0, 2);
+    perm(list_a, 0, 0);
+    cout << endl;
+    perm(list_b, 0, 3);
 
     return 0;
 }

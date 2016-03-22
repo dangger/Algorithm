@@ -6,5 +6,8 @@ def perms(elements) :
             for i in range(len(elements)) :
                 yield perm[:i] + elements[0:1] + perm[i:]
 
-for item in list(perms([1, 2, 3])) :
+for item in list(perms([4])) :
+    print item
+
+for item in list(perms(['a', 'b', 'c', 'd'])) :
     print item

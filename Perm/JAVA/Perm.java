@@ -1,6 +1,6 @@
 public class Perm {
 
-    public static void perm (int[] list, int k, int m) {
+    public static void perm (Object[] list, int k, int m) {
         if (k == m) {
             for (int i = 0; i <= m; i++) {
                 System.out.print(list[i] + " ");
@@ -15,15 +15,17 @@ public class Perm {
         }
     }
 
-    public static void swap(int[] list, int k, int m) {
-        int t;
+    public static void swap(Object[] list, int k, int m) {
+        Object t;
         t = list[k];
         list[k] = list[m];
         list[m] = t;
     }
 
     public static void main(String[] args) {
-        int list[] = {1, 2, 3};
-        perm(list, 0, 2);
+        Object list_a[] = {4};
+        Object list_b[] = {'a', 'b', 'c', 'd'};
+        perm(list_a, 0, 0);
+        perm(list_b, 0, 3);
     }
 }
