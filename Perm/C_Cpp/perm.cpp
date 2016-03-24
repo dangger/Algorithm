@@ -27,7 +27,7 @@ void perm(char *list, int k, int m)
 
 int main()
 {
-    char list_a[] = {4};
+    char list_a[] = {'4'};
     char list_b[] = {'a', 'b', 'c', 'd'};
 
     perm(list_a, 0, 0);

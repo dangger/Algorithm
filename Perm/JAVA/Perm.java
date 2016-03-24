@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Perm {
 
     public static void perm (Object[] list, int k, int m) {
@@ -23,9 +25,17 @@ public class Perm {
     }
 
     public static void main(String[] args) {
-        Object list_a[] = {4};
-        Object list_b[] = {'a', 'b', 'c', 'd'};
-        perm(list_a, 0, 0);
-        perm(list_b, 0, 3);
+        String[] list = new String[100];
+        int i = 0;
+
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
+        String str[] = s.split(" ");
+        for (String num : str) {
+            list[i++] = num;
+        }
+
+        System.out.println();
+        perm(list, 0, i - 1);
     }
 }
