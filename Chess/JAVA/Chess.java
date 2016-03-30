@@ -1,4 +1,5 @@
 import java.lang.Math;
+import java.util.Scanner;
 
 public class Chess {
 
@@ -34,7 +35,15 @@ public class Chess {
     }
 
     public static void main(String[] args) {
+        /*
         Chess c1 = new Chess(5, 5, 3);
+        */
+        Scanner sc = new Scanner(System.in);
+        int x = sc.nextInt();
+        int y = sc.nextInt();
+        int k = sc.nextInt();
+
+        Chess c1 = new Chess(x, y, n);
         c1.chessBoard(0, 0, c1.dc, c1.dr,
                 (int)Math.pow(2, c1.boardSize));
         c1.Print();

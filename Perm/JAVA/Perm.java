@@ -26,16 +26,23 @@ public class Perm {
 
     public static void main(String[] args) {
         String[] list = new String[100];
-        int i = 0;
-
+        //int i = 0;
         Scanner sc = new Scanner(System.in);
+
+        /*
         String s = sc.nextLine();
         String str[] = s.split(" ");
         for (String num : str) {
             list[i++] = num;
         }
+        */
+        int n = sc.nextInt();
+        for (int i = 0; i < n; i++) {
+            list[i] = sc.next();
+        }
 
         System.out.println();
-        perm(list, 0, i - 1);
+        //perm(list, 0, i - 1);
+        perm(list, 0, n - 1);
     }
 }
