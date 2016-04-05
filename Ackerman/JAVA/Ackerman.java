@@ -1,3 +1,8 @@
+/*
+ * Input:4 2
+ * Output:16
+ * */
+
 import java.util.Scanner;
 
 public class Ackerman {
@@ -20,7 +25,7 @@ public class Ackerman {
         System.out.printf("Ackerman(%d,%d) = %d\n", 
                 n, m, ackerman(n, m));
         */
-        System.out.printfln(ackerman(n, m));
+        System.out.println(ackerman(n, m));
     }
 
     public static int ackerman(int n, int m) {

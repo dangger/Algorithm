@@ -1,3 +1,8 @@
+/*
+ * Input:3 / * 2
+ * Output:/ * 2 / 2 * * / 2 * 2 / 2 * / 2 / *
+ * */
+
 import java.util.Scanner;
 
 public class Perm {
@@ -41,7 +46,7 @@ public class Perm {
             list[i] = sc.next();
         }
 
-        System.out.println();
+        //System.out.println();
         //perm(list, 0, i - 1);
         perm(list, 0, n - 1);
     }

@@ -43,7 +43,7 @@ public class Chess {
         int y = sc.nextInt();
         int k = sc.nextInt();
 
-        Chess c1 = new Chess(x, y, n);
+        Chess c1 = new Chess(x, y, k);
         c1.chessBoard(0, 0, c1.dc, c1.dr,
                 (int)Math.pow(2, c1.boardSize));
         c1.Print();
