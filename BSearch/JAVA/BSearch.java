@@ -4,7 +4,7 @@
  * */
 
 import java.util.Scanner;
-import java.util.Arrays;
+//import java.util.Arrays;
 
 public class BSearch {
 
@@ -30,7 +30,8 @@ public class BSearch {
         System.out.println();
         */
  
-        Arrays.sort(num, 0, n);
+        //Arrays.sort(num, 0, n);
+        Sort(num, 0, n);
 
         /*
         System.out.print("num[] = " + num[0]);
@@ -71,6 +72,7 @@ public class BSearch {
     }
 
     //非递归实现
+    /*
     public static int BSearch (int[] num, int x, int n) {
         int mid;
         int low = 0, high = n - 1;
@@ -87,5 +89,18 @@ public class BSearch {
         }
 
         return -1;
+    }
+    */
+
+    public static void Sort(int[] num, int left, int right) {
+        for (int i = left; i < right; i++) {
+            for (int j = i + 1; j < right; j++) {
+                if (num[i] > num[j]) {
+                    int temp = num[i];
+                    num[i] = num[j];
+                    num[j] = temp;
+                }
+            }
+        }
     }
 }
