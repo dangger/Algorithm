@@ -21,7 +21,7 @@ public class IntDivision {
     public static int fun(int n, int m) {
         if (n < 1 || m < 1) {
             return 0;
-        } else if (n == 1 || m == 1) {
+        } else if (n == 1 && m == 1) {
             return 1;
         } else if (n < m) {
             return fun(n, n);
