@@ -19,9 +19,6 @@ public class BSearch {
 
         int x = sc.nextInt();
 
-
- 
-        //Arrays.sort(num, 0, n);
         Sort(num, 0, n);
 
 
